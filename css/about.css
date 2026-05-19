@@ -1,0 +1,131 @@
+.about{
+    padding: 170px 9%;
+    text-align: center;
+    background: radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.05) 0%, rgba(12, 22, 38, 0.1) 100%);
+}
+
+.about h2{
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+    color: white;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.about p{
+    font-size: 1.15rem;
+    color: #cbd5e1;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hobby-section{
+    padding: 70px 9%;
+    text-align: center;
+}
+
+.hobby-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.hobby-box{
+    /* Donkerblauwe dozen */
+    background: rgba(18, 30, 49, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    width: 30%;
+    min-width: 280px;
+    transition: 0.3s ease;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hobby-box:hover {
+    transform: translateY(-5px);
+    border-color: rgba(56, 189, 248, 0.5);
+    box-shadow: 0 15px 40px rgba(56, 189, 248, 0.3);
+}
+
+.hobby-box h4{
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    color: #38bdf8;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+}
+
+.hobby-box p{
+    font-size: 1.05rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* Zorgt dat de hele sectie in het midden komt */
+.about-art-section {
+    margin-top: 60px;
+    padding: 40px 9%;
+    text-align: center;
+    background: rgba(56, 189, 248, 0.02);
+    border-radius: 20px;
+}
+
+.about-art-section h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+/* Zet de foto-vakjes naast elkaar */
+.art-grid {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* De kaarten waar de tekeningen in zitten - Aangepast voor anime art glow */
+.art-card {
+    background: rgba(18, 30, 49, 0.9);
+    border: 2px solid rgba(139, 69, 55, 0.4); /* Behouden als accentkleur */
+    border-radius: 15px;
+    padding: 18px;
+    width: 380px;
+    min-width: 320px;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 15px rgba(139, 69, 55, 0.2);
+}
+
+/* De tekening zelf - Krachtigere glow voor art effect */
+.art-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 18px;
+    transition: all 0.4s ease;
+    filter: drop-shadow(0 0 10px rgba(139, 69, 55, 0.7));
+}
+
+.art-card span {
+    color: #e27d60; /* Dezelfde accentkleur */
+    font-size: 0.95rem;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Effect als je er met je muis op gaat staan */
+.art-card:hover {
+    transform: translateY(-12px);
+    border-color: rgba(139, 69, 55, 1);
+    box-shadow: 0 0 35px rgba(139, 69, 55, 0.6);
+}
+
+.art-card:hover img {
+    filter: drop-shadow(0 0 18px rgba(139, 69, 55, 1));
+    transform: scale(1.01);
+}
